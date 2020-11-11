@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "SgPayNowQrCode\\": "src/"
+            "SgPayNowQrCode\\": "src"
         }
     },
     "minimum-stability": "dev",
