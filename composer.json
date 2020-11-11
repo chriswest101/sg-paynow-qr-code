@@ -1,0 +1,22 @@
+{
+    "name": "chriswest101/sg-paynow-qr-code",
+    "description": "Easily generate a SG PayNow compliant QR code",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0",
+        "simplesoftwareio/simple-qrcode": "^4.1"
+    },
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris West",
+            "email": "me@christophermwest.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "SgPayNowQrCode": "src/"
+        }
+    }
+}
