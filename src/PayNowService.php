@@ -224,7 +224,7 @@ class PayNowService
 	 */
 	private function createAsBase64Image(string $str): string
 	{
-		$filename = 'assets/images/PayNow.png';
+		$filename = dirname(__FILE__).'/assets/images/PayNow.png';
 		$imgBinary = fread(fopen($filename, "r"), filesize($filename));
 		return "data:image/png;base64," . QRCodeService::generate($str, $imgBinary);
 	}
