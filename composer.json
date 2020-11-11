@@ -17,5 +17,7 @@
         "psr-0": {
             "SgPayNowQrCode": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
