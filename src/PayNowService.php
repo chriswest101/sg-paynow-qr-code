@@ -142,9 +142,9 @@ class PayNowService
 		}
 
 		if ($this->uen !== null) {
-			$this->paymentType = PayNowQRService::PAY_VIA_UEN;
+			$this->paymentType = PayNowService::PAY_VIA_UEN;
 		} else {
-			$this->paymentType = PayNowQRService::PAY_VIA_MOBILE;
+			$this->paymentType = PayNowService::PAY_VIA_MOBILE;
 		}
 	}
 
