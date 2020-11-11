@@ -2,6 +2,8 @@
 
 namespace SgPayNowQrCode\Helpers;
 
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
+
 class QRCodeService
 {
     /**
@@ -12,7 +14,7 @@ class QRCodeService
      */
     public static function generate(string $string, string $pathToImage): string
     {
-        return base64_encode(\QrCode::format('png')
+        return base64_encode(QrCode::format('png')
                 ->size(300)
                 ->style('square', 0.8)
                 ->margin(5)
